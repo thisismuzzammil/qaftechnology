@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek Landing Page</title>
+    <title>Live Demo</title>
     <!-- Use Google Fonts for a modern typeface -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,42 +32,24 @@
         }
     </style>
 </head>
-<body class="antialiased flex flex-col min-h-screen">
+<body class="antialiased">
 
-   
-
-   
-
-    <!-- Main Content -->
-    <main class="flex-grow">
-        <!-- Features Section -->
-      
-        
-        <!-- PHP Web App Section -->
-        <section id="demo" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-           
-            <div class="relative w-full rounded-lg shadow-xl overflow-hidden p-8 bg-white">
-                <div id="php-content" class="text-center text-gray-400">
-                    <!-- The fetched content will be inserted here by JavaScript -->
-                    <div class="flex flex-col items-center justify-center p-8 space-y-4">
-                        <div class="w-12 h-12 border-4 border-dashed rounded-full animate-spin border-indigo-500"></div>
-                        <p class="text-lg font-medium text-gray-500">Loading content...</p>
-                    </div>
-                </div>
+    <!-- PHP Web App Section -->
+    <section id="demo" class="container mx-auto p-0 m-0 w-screen h-screen">
+        <div id="php-content" class="w-full h-full text-center text-gray-400">
+            <!-- The fetched content will be inserted here by JavaScript -->
+            <div class="flex flex-col items-center justify-center p-8 space-y-4">
+                <div class="w-12 h-12 border-4 border-dashed rounded-full animate-spin border-indigo-500"></div>
+                <p class="text-lg font-medium text-gray-500">Loading content...</p>
             </div>
-        </section>
-
-        <!-- Call to Action Section -->
-       
-    </main>
-
-   
+        </div>
+    </section>
 
     <!-- JavaScript to load external content -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const contentContainer = document.getElementById('php-content');
-            const url = 'https://jamea.qaftechnology.com:8445/jamea/feemanagement/students.php'; // Replace with the URL of your PHP web app
+            const url = 'https://qaftechnology.com/saffar/'; // Replace with the URL of your PHP web app
 
             // Display a loading indicator
             contentContainer.innerHTML = `
