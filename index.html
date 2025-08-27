@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Landing Page</title>
+    <!-- Use Google Fonts for a modern typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-slate-50 text-gray-800;
+        }
+        /* A simple scroll animation for links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Pure CSS Diagonal Stripes Pattern for the Hero Section */
+        .hero-pattern {
+            background-image: repeating-linear-gradient(
+                -45deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.1) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo with Emoji -->
+            <a href="#" class="flex items-center space-x-2 text-xl font-bold text-indigo-600">
+                <span role="img" aria-label="sparkle">✨</span>
+                <span>Sparkle</span>
+            </a>
+            <!-- Nav Links (hidden on mobile, shown on larger screens) -->
+            <ul class="hidden sm:flex space-x-8">
+                <li><a href="#features" class="font-medium hover:text-indigo-600 transition-colors">Features</a></li>
+                <li><a href="#pricing" class="font-medium hover:text-indigo-600 transition-colors">Pricing</a></li>
+                <li><a href="#contact" class="font-medium hover:text-indigo-600 transition-colors">Contact</a></li>
+                <li><a href="#demo" class="font-medium hover:text-indigo-600 transition-colors">Demo</a></li>
+            </ul>
+            <!-- Mobile Menu Button with Emoji -->
+            <button class="sm:hidden text-gray-800 focus:outline-none">
+                <span role="img" aria-label="menu">☰</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-indigo-500 to-indigo-700 text-white overflow-hidden hero-pattern">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                Build Your Product. <br class="hidden sm:inline"> Faster.
+            </h1>
+            <p class="text-lg sm:text-xl text-indigo-100 max-w-2xl mx-auto mb-8">
+                Unlock your potential with our cutting-edge platform. From ideation to launch, we've got you covered.
+            </p>
+            <a href="#cta" class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Key Features</h2>
+            <p class="text-gray-500 mt-2">Everything you need to succeed in one place.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature Card 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div class="text-indigo-600 mb-4 inline-block text-3xl">
+                    <!-- Icon: Rocket with Emoji -->
+                    <span role="img" aria-label="rocket">🚀</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Blazing Fast</h3>
+                <p class="text-gray-500">
+                    Our platform is optimized for speed, ensuring a seamless experience for your users.
+                </p>
+            </div>
+            <!-- Feature Card 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div class="text-indigo-600 mb-4 inline-block text-3xl">
+                    <!-- Icon: Lock with Emoji -->
+                    <span role="img" aria-label="lock">🔒</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Secure by Design</h3>
+                <p class="text-gray-500">
+                    We prioritize security with advanced protocols to protect your data.
+                </p>
+            </div>
+            <!-- Feature Card 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div class="text-indigo-600 mb-4 inline-block text-3xl">
+                    <!-- Icon: Star with Emoji -->
+                    <span role="img" aria-label="star">⭐</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2">User Friendly</h3>
+                <p class="text-gray-500">
+                    An intuitive interface means less time learning and more time building.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Iframe Section -->
+    <section id="demo" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Live Demo</h2>
+            <p class="text-gray-500 mt-2">Check out our platform in action below.</p>
+        </div>
+        <div class="relative w-full h-[600px] rounded-lg shadow-xl overflow-hidden">
+            <iframe src="https://jamea.qaftechnology.com:8445/jamea" frameborder="0" class="absolute inset-0 w-full h-full" title="Live Demo"></iframe>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="bg-indigo-600 py-16 text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to get started?</h2>
+            <p class="text-indigo-100 max-w-2xl mx-auto mb-8">
+                Join thousands of creators who are already building amazing things.
+            </p>
+            <a href="#" class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                Sign Up for Free
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Contact Us</h2>
+            <p class="text-gray-500 mt-2">We'd love to hear from you!</p>
+        </div>
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <div class="mt-1">
+                        <input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2">
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <div class="mt-1">
+                        <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2">
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <div class="mt-1">
+                        <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Sparkle. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
