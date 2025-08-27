@@ -45,10 +45,7 @@
         
         <!-- PHP Web App Section -->
         <section id="demo" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Live Demo</h2>
-                <p class="text-gray-500 mt-2">Check out our platform in action below.</p>
-            </div>
+           
             <div class="relative w-full rounded-lg shadow-xl overflow-hidden p-8 bg-white">
                 <div id="php-content" class="text-center text-gray-400">
                     <!-- The fetched content will be inserted here by JavaScript -->
@@ -64,18 +61,13 @@
        
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2024 Sparkle. All rights reserved.</p>
-        </div>
-    </footer>
+   
 
     <!-- JavaScript to load external content -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const contentContainer = document.getElementById('php-content');
-            const url = 'https://jamea.qaftechnology.com:8445/jamea/feemanagement/'; // Replace with the URL of your PHP web app
+            const url = 'https://jamea.qaftechnology.com:8445/jamea/feemanagement/students.php'; // Replace with the URL of your PHP web app
 
             // Display a loading indicator
             contentContainer.innerHTML = `
